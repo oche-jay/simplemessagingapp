@@ -1,4 +1,4 @@
-# simplemessagingapp
+# simplemessagingapp [![Build Status](https://travis-ci.org/oche-jay/simplemessagingapp.svg?branch=master)](https://travis-ci.org/oche-jay/simplemessagingapp)
 
 This simple messaging app functions as a Web Server that accepts JSON messages sent by HTTP post to a configurable port 
 (default price: 8000).
@@ -57,8 +57,8 @@ the application manually (e.g. using postman or curl).
  
   - [x]  All messages must be processed  
              
-              All incoming messages are validated, queued and then processed. For invalid messages, a HTTP 400 Status along with the 
-              reason/error message is returned to the user.          
+              All incoming messages are validated, queued and then processed. For invalid messages, 
+              a HTTP 400 Status(Bad Request) along with the reason/error message is returned to the user.          
 
   - [x] After every 10th message received your application should log a report detailing the number
                 of sales of each product and their total value. 
@@ -67,4 +67,5 @@ the application manually (e.g. using postman or curl).
                 
   - [x] After 50 messages your application should log that it is pausing, stop accepting new messages and log a report of the adjustments that have been made to each sale type while the application was running.      
                
-               The server prints the required report and then pauses for a configurable amount of time (default value is 10 seconds).
+               The server prints the required report and then pauses for a configurable amount of 
+               time (default value is 10 seconds).
