@@ -1,7 +1,7 @@
 # simplemessagingapp [![Build Status](https://travis-ci.org/oche-jay/simplemessagingapp.svg?branch=master)](https://travis-ci.org/oche-jay/simplemessagingapp)
 
 This simple messaging app functions as a Web Server that accepts JSON messages sent by HTTP post to a configurable port 
-(default price: 8000).
+(default port: 8000).
 
 ### Build Instructions
 To test and build this application:
