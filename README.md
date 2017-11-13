@@ -21,7 +21,7 @@ To test and build this application:
              "price": "0.10"
           }
  
- - Message Type 2: The details of a sale and the number of counts of
+ - Message Type 2: The details of a sale and the number of occurences of
                    that sale. E.g 20 sales of apples at 10p each.
                    
            {
