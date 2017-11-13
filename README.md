@@ -45,7 +45,7 @@ To test and build this application:
  the app expects the values for "price" and "count" to be non-zero and postive.
  
  ### Testing
-A suite of data-driven unit tests can be found in  [src/test/java](/src/test/java/ConfigTest.java) folder.
+A suite of data-driven unit tests can be found in [src/test/java](/src/test/java/) folder.
 Some of the tests do print sample message payloads to the console and be these can be used to test
 the application manually (e.g. using postman or curl).
 
