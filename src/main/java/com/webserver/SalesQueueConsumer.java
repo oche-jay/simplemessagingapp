@@ -87,12 +87,6 @@ class SalesQueueConsumer implements Runnable {
             logger.info("Succesfully processed message: " + message);
             map.put(message.getProduct(), salesInfo);
             count++;
-
-//            } catch (InterruptedException e) {
-//                e.printStackTrace();
-//            } catch (Exception e) {
-//                logger.severe("Unexpected Error");
-//                e.printStackTrace();
         } finally {
             if (count > 0 && count % 10 == 0) {
                 printReport();
