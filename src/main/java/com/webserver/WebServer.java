@@ -15,22 +15,22 @@ import java.util.logging.Logger;
 public class WebServer {
 
     private final static Logger logger = Logger.getLogger(WebServer.class.getName());
+    
     @Setter
     static int port = 8000;
+    
     @Setter
     static int queue_capacity = 1000;
+    
     @Getter
     static BlockingQueue<Message> queue;
+    
     @Getter
     static SalesQueueConsumer consumer;
 
     public WebServer() {
         queue = new ArrayBlockingQueue<>(queue_capacity);
         consumer = new SalesQueueConsumer(queue);
-    }
-
-    public static void main(String[] args) throws Exception {
-        startServer();
     }
 
     public static void startServer() throws IOException {
@@ -40,6 +40,11 @@ public class WebServer {
         server.createContext("/sales", new SaleMessageHandler(queue, consumer));
         server.setExecutor(null);
         server.start();
+    }
+    
+    
+    public static void main(String[] args) throws Exception {
+        startServer();
     }
 
 }
